@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startClick"
+        android:text="Press Me Start"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="pauseClick"
+        android:text="Press Me Pause"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="endClick"
+        android:text="Press Me End"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="resetClick"
+        android:text="Press Me Reset"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="setTimeClick"
+        android:text="Press Me SetTime"/>
+
+    <com.ftb.library.FloatingTimerButton
+        android:id="@+id/button"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_gravity="bottom|end"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        app:backgroundTint="@android:color/white"
+        app:progressWidth="4dp"
+        app:drawableWidh="30dp"
+        app:facingDuration="600"
+        app:facingPadding="2dp"
+        app:drawableHeight="36dp"
+        app:progressColor="#ff5f53"
+        app:borderWidth="1dp"
+        app:progressPadding="6dp"
+        app:progressSecondColor="#f7f2f1"
+        app:periodSecond="30"
+        app:elevation="2dp"/>
+
+</LinearLayout>
