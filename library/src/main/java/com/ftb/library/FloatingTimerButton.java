@@ -213,6 +213,14 @@ public class FloatingTimerButton extends FloatingActionButton implements
         invalidate();
     }
 
+    public int getTimeSecond() {
+        return getTimeMillis() / 1000;
+    }
+
+    public int getTimeMillis() {
+        return (int) (progress * periodMillis / maxProgress);
+    }
+
     public void setTimeSecond(int time) {
         setTime(time, TimeUnit.SECONDS);
     }
